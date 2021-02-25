@@ -18,10 +18,10 @@ CASE WHEN T101.mer_mega_cty ='서울특별시' THEN '01'
        WHEN T101.mer_mega_cty ='경상남도' THEN '16'
        WHEN T101.mer_mega_cty ='제주특별자치도' THEN '17'
        WHEN T101.mer_mega_cty ='전국' THEN '18'
-	   ELSE '-9999'
+	   ELSE '-9999' -- 혹시 몰라서
        END AS sido_no,T101 
 FROM DATA  T101
-WHERE T101.DATE BETWEEN '20190101' AND '20201031'  -- 조건에 따라 추출 속도 차이가 있습니다.
+WHERE T101.DATE BETWEEN '20190101' AND '20201031'  -- 조건에 따라 추출 속도 차이가 있을 수 있음
 ;
 
 
