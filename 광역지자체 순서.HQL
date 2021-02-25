@@ -1,4 +1,4 @@
--- 카드 일합계 테이블에 주차 정보 추가
+-- 광역지자체 순서 정보 추가
 SELECT *, 
 CASE WHEN T101.mer_mega_cty ='서울특별시' THEN '01'
        WHEN T101.mer_mega_cty ='부산광역시' THEN '02'
